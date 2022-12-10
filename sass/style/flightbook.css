@@ -1,0 +1,30 @@
+:root {
+    --main-blue : #004dc0;
+    --when-hover : #74acff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+.my-form {
+    position: relative;
+    width: 100%;
+    top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+}
+form {
+    width: 75%;
+    height: 500px;
+    top: 30px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: 1px 1px 10px black;
+
+}

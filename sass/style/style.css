@@ -1,0 +1,167 @@
+:root {
+    --main-blue : #004dc0;
+    --when-hover : #74acff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+.navebar {
+    background: white;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;   
+    z-index: 5;
+    box-shadow: 0px 5px 20px #00000078;
+}
+.navebar .logo {
+    width: 74px;
+    font-size: 50px;
+    position: relative;
+    top: 10px ;
+    transform: rotate(-45deg);
+    color: var(--main-blue);
+}
+/*start menu */
+.navebar .menu {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between ;
+
+}
+.navebar .menu .li {
+    padding: 5px;
+    height: 100%;
+    top: 30px;
+    transition: 0.2s;
+    display: block;
+
+}
+.navebar .menu .li:hover {
+    background-color: #80808083;
+    color: white;
+    border-top: 3px solid var(--main-blue);
+}
+.navebar .menu .li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+    font-size: 16px;
+}
+.navebar .menu .li:hover  a {
+    color: white;
+}
+/*start buttens*/
+.navebar .bottons {
+    position: relative;
+    top: 30px;
+}
+/* the custimized navbar */
+.navebar .custimised-menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.custimised-menu .menu-cont {
+    position: absolute;
+    width: 80vmin;
+    display: none;
+    font-weight: 800;
+    letter-spacing: 2px;
+    background-color: #ffffffaf;
+    list-style: none;
+    padding-left: 5px;
+    right: 0px;
+    top: 80px;
+
+
+}
+.custimised-menu .menu-cont li {
+    position: relative;
+    padding: 4px;
+
+}
+.custimised-menu .menu-cont li:hover {
+    background-color: #fafafacb;
+    left: 15px;
+    width: calc(100% - 15px);
+}
+.custimised-menu .menu-cont li::before {
+    content: "";
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    border: 5px solid ;
+    border-color: transparent  transparent transparent var(--main-blue);
+    left: -10px;
+    top: 4px;
+    display: none;
+}
+.custimised-menu .menu-cont li:hover::before {
+    content: "";
+    display: block;
+}
+.custimised-menu .menu-cont li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 800;
+}
+.custimised-menu #checkbox {/*------------*/
+    appearance: unset;
+    width: 35px;
+    height: 35px;
+    background: linear-gradient(0deg, var(--main-blue),var(--main-blue), white,
+    var(--main-blue),white , var(--main-blue), white,var(--main-blue),var(--main-blue));
+    border: 5px solid var(--main-blue);
+    border-radius: 5px;
+}
+.custimised-menu #checkbox:hover {/*----------------------------------------*/
+    cursor: pointer;
+    background: linear-gradient(0deg, var(--when-hover),var(--when-hover), white,
+    var(--when-hover),white , var(--when-hover), white,var(--when-hover),var(--when-hover));
+    border: 5px solid var(--when-hover);
+}
+@media (max-width : 757px) {
+    
+    .navebar .menu{
+        display: none;
+    }
+    .custimised-menu #checkbox:checked ~ .menu-cont{
+    display: block;
+    }
+}
+@media (min-width : 758px) {
+    .navebar .custimised-menu {
+        display: none;
+    }
+}
+.navebar .bottons #btn {
+    height: 35px;
+    width: 70px;
+    padding: 7px;
+    border: #80808067 solid 1px;
+    background: var(--main-blue);
+    border-radius: 5px;
+    font-weight: 800;
+}
+.navebar .bottons #btn:hover {
+    background: #3787ff;
+}
+.navebar .bottons #btn a {
+color: white ;
+text-decoration: none;
+}
+.navebar .bottons #btn a:visited {
+color: white;
+}
+.navebar .bottons label select{
+    height: 35px;
+    width: 70px;
+    border: #80808067 solid 1px ;
+    padding: 8px;
+    border-radius: 5px;
+}

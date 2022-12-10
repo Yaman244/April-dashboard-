@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>travel</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/login.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400;700&family=Work+Sans:wght@200;300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="conn">
+        <!--navebar-->
+        <nav class="navebar">
+            <ion-icon name="send-sharp" class="logo"></ion-icon>
+            <div class="menu">
+                <div class="li"><a href="../index.html">Home</a></div>
+                <div class="li"><a href="contact.html"> About US</a></div>
+                <div class="li"><a href="services.html"> services </a></div>
+                <div class="li"><a href="destination.html">Destination</a></div>
+                <div class="li"><a href="flightbook.html"> Flight Booking</a></div>
+            </div>
+            <div class="bottons">
+                <label for="lang">
+                    <select name="lang" id="lang">
+                        <option value="en"> Eng </option>
+                        <option value="ar"> Ara </option>
+                    </select>
+                </label>
+                <button id="btn"> <a href="pages/login.html">LogIn</a></button>
+            </div>
+            <div class="custimised-menu">
+                <input type="checkbox" id="checkbox">
+                <ul class="menu-cont">
+                    <li><a href="../index.html"> Home</a></li>
+                    <li><a href="aboutus.html"> About US</a></li>
+                    <li><a href="services.html"> Services</a></li>
+                    <li><a href="destination.html"> Destination</a></li>
+                    <li><a href="/flightbook.html"> Flight Booking</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="login-cont">
+        <!--sign in -->
+        <div class="signin-form">
+            <div class="log-titil">
+                <h1> Welcome </h1>
+                <p> please SingIn to continu your booking </p>
+            </div>
+            <div class="singgrid">
+                <div class="sign-input">
+                    <div class="sing1">
+                        <div class="first">
+                            first name:<br>
+                            <input type="text" name="name" id="first" placeholder="first..">
+                        </div>
+                        <div class="last">
+                            last name:<br>
+                            <input type="text" name="lname" id="last" placeholder="last name..">
+                            </div>
+                    </div>
+                    
+                    <div class="sing2">
+                        your email:<br>
+                        <input type="email" name="email" id="email" placeholder="AAAA@mail.com"><br>
+                        password:<br>
+                        <input type="password" name="pass" id="pass" placeholder="password.. ">
+                        <input type="submit" value="SingIn" id="singbutton">
+                    </div>
+                </div>
+                <div class="login-dir">
+                    <h3> you already have an account? </h3>
+                    <input type="checkbox" name="login" id="login">
+                    <label for="login">Log In</label>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="photo"></div>
+        <div class="login-form">
+            <div class="log-titil">
+                <h1> Welcome again!</h1>
+                <p> please LogIn to continu your booking </p>
+
+            </div>
+            <div class="inputs">
+                <div class="input1">
+                enter your email:
+                <input type="email" name="email" id="email" placeholder="AAAAAAA@AA.com">
+                </div>
+                <div class="input2">
+                    enter your password:
+                    <input type="password" name="pass" id="pass" placeholder="your password">
+                </div>
+                <input type="submit" value="LogIn" id="logbutton">
+            </div>
+            <div class="signin-dir">
+                <h3> you don't have an account? </h3>
+                <input type="checkbox" name="singin" id="singin">
+                <label for="singin">SIng In</label>
+            </div>
+
+        </div>
+        
+    </div>
+
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script>
+            let loginForm = document.querySelector('.login-form');
+            let button = document.getElementById('singin');
+            let singinForm = document.querySelector('.signin-form');
+            let img = document.querySelector('.photo');
+            
+            button.addEventListener('click', () => { loginForm.style.display = "none" ;
+            singinForm.style.display = "block";
+            img.style.borderRadius = 0;
+            img.style.borderTopRightRadius = "10px";
+            img.style.borderBottomRightRadius = "10px";
+            ;
+        })
+        </script>
+
+
+</body>
+</html>

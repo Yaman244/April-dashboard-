@@ -1,0 +1,170 @@
+:root {
+    --main-blue : #004dc0;
+    --when-hover : #74acff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    
+} 
+.login-cont {
+    display: flex;
+    width: 80%;
+    min-height: 600px;
+    height: 80vh;
+    position: relative;
+    top: 100px;
+    left: 10%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px gray;
+    text-align: center;
+
+}
+.login-cont .photo {
+    flex: 1;
+    height: 100%;
+    position: relative;
+    background-image: url(../images/plain5.jpg);
+    background-size: cover;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+
+.login-cont .login-form {
+    flex: 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 'haeder' 'inputs' 'singin';
+    grid-template-rows: 150px auto 100px;
+    height: 100%;
+}
+.log-titil {
+    padding: 20px;
+    margin-top: 20px;
+    
+}
+.log-titil h1 {
+    color: var(--main-blue);
+
+}
+.log-titil p {
+    color: gray;
+    font-weight: bold;
+}
+.login-cont .login-form .inputs {
+    grid-area: 'inputs';
+    position: relative;
+    width: 80%;
+    height: 50px;
+    left: 50%;
+    top: 30%;
+    transform: translateX(-50%) translateY(-50%);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    font-size: 15px;
+    font-weight: 800;
+    text-align: left;
+    color: var(--when-hover);
+}
+input {
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid var(--main-blue);
+}
+
+#logbutton {
+    width: 50%;
+    margin: 10px;
+    left: 25px;
+    transform: translateX(50%);
+    border-radius: 5px;
+    background: var(--main-blue);
+    color:white ;
+    border: none;
+}
+#logbutton:hover {
+    background: #3787ff;
+}
+.login-form .signin-dir { 
+    background: var(--main-blue);
+    color: white;
+    padding: 10px;
+    border-bottom-right-radius: 10px;
+}
+.signin-dir input {
+    appearance: none ;
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    border-radius:50px ;
+
+}
+
+.signin-form {
+    display: none;
+    flex: 2;
+    height: 100%;
+}
+.singgrid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+
+}
+.singgrid .sign-input {
+    position: relative;
+    width: 80%;
+    height: 50%;
+    color: var(--when-hover);
+    left: 10%;
+    top: 10%;
+    font-size: 15px;
+    font-weight: 800;
+}
+.sign-input .sing1 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap ;
+}
+.sign-input .sing1 .first{
+    padding-right: 2px;
+    flex: 1;
+}
+.sign-input .sing1 .last{
+    padding-left: 2px;
+
+    flex: 1;
+}
+.sign-input .sing2 {
+    
+    text-align: center;
+    margin: 0;
+}
+.sign-input #singbutton {
+    position: relative;
+    width: 50%;
+    margin-top: 20px;
+    border-radius: 5px;
+    background: var(--main-blue);
+    color:white ;
+    border: none;
+}
+.sign-input #singbutton:hover {
+    background: #3787ff;
+}
+.singgrid .login-dir {
+    grid-area: 'login';
+    bottom: 0px;
+    background: var(--main-blue);
+    font-size: 15px;
+    color: white;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+}

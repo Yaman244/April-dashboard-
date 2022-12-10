@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>travel</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400;700&family=Work+Sans:wght@200;300&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="conn">
+    <!--navebar-->
+    <nav class="navebar">
+        <ion-icon name="send-sharp" class="logo"></ion-icon>
+        <div class="menu">
+            <div class="li"><a href="index.html">Home</a></div>
+            <div class="li"><a href="pages/contact.html"> About US</a></div>
+            <div class="li"><a href="#services"> services </a></div>
+            <div class="li"><a href="pages/destination.html">Destination</a></div>
+            <div class="li"><a href="pages/flightbook.html"> Flight Booking</a></div>
+        </div>
+        <div class="bottons">
+            <label for="lang">
+                <select name="lang" id="lang">
+                    <option value="en"> Eng </option>
+                    <option value="ar"> Ara </option>
+                </select>
+            </label>
+            <button id="btn"> <a href="pages/login.html">LogIn</a></button>
+        </div>
+        <div class="custimised-menu">
+            <input type="checkbox" id="checkbox">
+            <ul class="menu-cont">
+                <li><a href="index.html"> Home</a></li>
+                <li><a href="pages/contact.html"> About US</a></li>
+                <li><a href="#Services"> Services</a></li>
+                <li><a href="pages/destination.html"> Destination</a></li>
+                <li><a href="pages/flightbook.html"> Flight Booking</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+    <!--header img -->
+<div class="head">
+    <div class="container">
+        <div class="intro">
+            <p>we are the wonder of your weekend<br> <span> discover the world </span><br>
+            with our guide</p>
+            <button type="submit"> start tours</button>
+        </div>
+        <img src="images/plain3.jpg" alt="airplaine">
+    </div>
+        <div class="booking">
+            <div class="location">
+                <ion-icon name="earth-outline"></ion-icon>
+                Select Country:
+                <input list="counter" id="search" placeholder=" type your Destination..">
+                <datalist id="counter" >
+                    <option value="USA"> America </option>
+                    <option value="bri"> Britain </option>
+                    <option value="chi"> China </option>
+                    <option value="Ger"> Germany </option>
+                    <option value="ita"> italy </option>
+                    <option value="Jap"> Japan </option>
+                    <option value="syr"> syria </option>
+                    <option value="Rus"> Russia </option>
+                </datalist>
+            </div>
+            <div class="select-date">
+                <ion-icon name="calendar-outline"></ion-icon>
+                <label for="today"> Date:</label> <br>
+                <input type="date" id="today" step="3" min="2022-01-01" max="2024-04-24" value="2022-01-01" >
+            </div>
+            <div class="phone">
+                <ion-icon name="call-outline"></ion-icon> Tel:<br>
+                <input type="tel"  id="telephon" placeholder=" enter your phone number..">
+            </div>
+            <button type="submit"><a href="pages/flightbook.html"> Booking </a></button>
+        </div>
+</div>       
+<!--page body -->
+    <div class="para1">
+        <div class="title1">
+            <span>about us</span><br>
+            <p>explore all the corneres of the world with us.</p>
+        </div>
+        <div class="cont1">
+            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime quae eligendi eveniet voluptates voluptas rem, non dolore ipsam eum incidunt culpa similique. Iusto consequatur labore pariatur, doloribus qui obcaecati. Unde!</p>
+            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, eum explicabo suscipit quibusdam iure ad aliquam porro veniam repudiandae quod corporis fugit odit doloribus. Ab, eum? Distinctio ut voluptate quasi.</p>
+            <button type="submit"> learn more </button>
+        </div>
+    </div>
+
+<!-- destination -->
+    <div class="distin">
+        <div class="catygory">
+            <div class="ctygory-title">
+            <p> CATYGORY </p>
+            <h2> we offer best services</h2>
+            </div>
+            <div class="catygory-cards">
+                <div class="card1">
+                    <ion-icon name="partly-sunny-outline"></ion-icon>
+                    <h3>calculated weather </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, odio non necessitatibus optio recusandae laborum maiores vero.</p>
+                </div>
+                <div class="card1">
+                    <ion-icon name="airplane-outline"></ion-icon>
+                    <h3>beat flight </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, odio non necessitatibus optio recusandae laborum maiores vero.</p>
+                </div>
+                <div class="card1">
+                    <ion-icon name="location-outline"></ion-icon>
+                    <h3>local event </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, odio non necessitatibus optio recusandae laborum maiores vero.</p>
+                </div>
+                <div class="card1">
+                    <ion-icon name="options-outline"></ion-icon>
+                    <h3>customizations </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, odio non necessitatibus optio recusandae laborum maiores vero.</p>
+                </div>
+            </div>
+            <p class="catygory-discrip">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, illo. Nam rem explicabo debitis quas autem dignissimos inventore optio eos quam voluptatum veritatis sit, voluptas dicta placeat ad illo soluta?</p>
+            <button type="submit" class="servises-button"> see more services</button>
+        </div>
+        <div class="toprating">
+            <div class="toprating-title">
+                <p> TOP RATED </p>
+                <h2> Top Rated Destinations </h2>
+            </div>
+            <div class="topratting-card">
+                <div class="card1">
+                    <img src="images/plane1.jpg" alt="" srcset="">
+                    <div class="trip-img-disc">
+                        <div class="trip-des">
+                            <p class="first"> Full Europe </p>
+                            <p> 28 days trip </p>
+                        </div>
+                        <div class="trip-price"> $15,000 </div>
+                    </div>
+                </div>
+                <div class="card1">
+                    <img src="images/plain5.jpg" alt="" >
+                    <div class="trip-img-disc">
+                        <div class="trip-des">
+                            <p class="first">London, UK</p>
+                            <p> 12 days trip </p>
+                        </div>
+                        <div class="trip-price"> $4,200 </div>
+                    </div>
+                </div>
+                <div class="card1">
+                    <img src="images/plane2.jpg" alt="" srcset="">
+                    <div class="trip-img-disc">
+                        <div class="trip-des">
+                            <p class="first">Reme, Italy </p>
+                            <p> 10 days trip </p>
+                        </div>
+                        <div class="trip-price"> $5,490 </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="experince">
+            <div class="toprating">
+                <p class="num1"> TOP RATED </p>
+                <h2> Top Rated Destinations </h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit suscipit dicta ad ducimus reprehenderit consequuntur officiis ullam vitae! Velit reprehenderit culpa recusandae commodi atque aperiam, id voluptatibus fuga saepe perferendis?</p>
+            </div>
+            <div class="places">
+                <img src="images/plane1.jpg" alt="" style="grid-row: 1/3;">
+                <img src="images/plane2.jpg" alt="" style="    grid-row: 1/3;">
+                <img src="images/plain3.jpg" alt="">
+                <img src="images/plain4.jpg" alt="">
+                <img src="images/plain5.jpg" alt="" style="grid-row: 2/4;">
+                <img src="images/plain6.jpg" alt="" style="grid-row: 3/5;">
+                <img src="images/Jellyfish.jpg" alt="">
+            </div>
+        </div>
+    </div>
+<!-- flight booking-->
+<div class="book-sec">
+    <div class="steps">
+        <p class="booking-titl">
+            Enjoy and fast <br>
+            Book your next trip <br>
+            in 3 easy steps.
+        </p>
+        <div class="step1">
+            <div class="step-icon"></div>
+
+            <div class="step-text">
+            <h3>chose destination</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+        </div>
+        <div class="step1">
+            <div class="step-icon"></div>
+
+            <div class="step-text">
+            <h3>make payment </h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div class="step1">
+            <div class="step-icon"></div>
+            <div class="step-text">
+            <h3> reach airport on selected date</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+
+        </div>
+    </div>
+    <div class="book-img">
+        <img src="./images/plane2.jpg" alt="img">
+        <div class="book-img-disc">
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- footer -->
+
+
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
