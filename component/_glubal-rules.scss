@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    scroll-behavior: smooth;
+}
+:root {
+    --main-color: #b6a509;
+    --prim-color: #311a53;
+}
+
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: var(--prim-color);
+    transition: all 0.3s ease;
+}
+.button {
+    border: 1px solid var(--prim-color);
+    padding: 5px 15px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+ion-icon {
+    font-size: 20px;
+}

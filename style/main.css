@@ -1,0 +1,242 @@
+header {
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  text-transform: uppercase;
+  top: 0px;
+  padding: 10px 0px;
+  -webkit-box-shadow: 0px 2px 10px 3px #eeeeee73;
+          box-shadow: 0px 2px 10px 3px #eeeeee73;
+}
+
+header nav {
+  max-width: 1200px;
+  height: auto;
+  margin: auto;
+  padding: 0 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+header nav .logo {
+  font-size: 1.5rem;
+  font-weight: 900;
+  width: 40%;
+}
+
+header nav .nav-menu {
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .nav-menu #toggle {
+  width: 90px;
+  display: none;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  float: right;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+header nav .nav-menu #toggle .toggle-button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  cursor: pointer;
+}
+
+header nav .nav-menu #toggle .toggle-button::before,
+header nav .nav-menu #toggle .toggle-button::after {
+  content: "";
+  width: 30px;
+  height: 1px;
+  position: absolute;
+  background-color: var(--prim-color);
+  left: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+header nav .nav-menu #toggle .toggle-button::after {
+  top: 0px;
+}
+
+header nav .nav-menu #toggle .toggle-button::before {
+  top: 10px;
+}
+
+header nav .nav-menu #toggle .toggle-button.open::after {
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+header nav .nav-menu #toggle .toggle-button.open::before {
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+header nav .nav-menu ul {
+  min-width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 800;
+  font-size: 0.8rem;
+  width: 100%;
+}
+
+header nav .nav-menu ul li {
+  padding-left: 10px;
+}
+
+header nav .nav-menu ul a:hover {
+  color: var(--main-color);
+  text-decoration: overline;
+}
+
+header nav .sign-in-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+header nav .sign-in-nav .button:hover {
+  background: var(--prim-color);
+  color: #fff;
+}
+
+header nav .sign-in-nav .sign-in-button {
+  padding: 5px 15px;
+  color: var(--main-color);
+  text-transform: uppercase;
+  background-color: #fff;
+  border: none;
+  white-space: nowrap;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+header nav .sign-in-nav .sign-in-button:hover {
+  background: var(--prim-color);
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  header nav .nav-menu {
+    display: inline-block;
+  }
+  header nav .nav-menu #toggle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header nav .nav-menu ul {
+    display: block;
+    position: absolute;
+    top: 52px;
+    width: 100%;
+    background-color: var(--prim-color);
+    max-height: 0px;
+    visibility: hidden;
+    overflow: hidden;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    left: 0px;
+    line-height: 40px;
+  }
+  header nav .nav-menu ul a {
+    color: #fff;
+    width: 100%;
+    padding: 0px 20px;
+  }
+  header nav .nav-menu ul.open {
+    visibility: visible;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --main-color: #b6a509;
+  --prim-color: #311a53;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--prim-color);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button {
+  border: 1px solid var(--prim-color);
+  padding: 5px 15px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+ion-icon {
+  font-size: 20px;
+}
+/*# sourceMappingURL=main.css.map */
