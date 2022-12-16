@@ -1,7 +1,7 @@
-# April-dashboard-
-Responsive dashboard with HTML and Css
+# sass-project-
+Responsive website with Html, css, javascript, and sass
 
-April dashbord is an admain dashbord with a golden theme.
+this is a courses website templet 
 
 ## project nots:
 the project is just a static web page.
