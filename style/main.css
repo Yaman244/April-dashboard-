@@ -2,11 +2,13 @@ header {
   width: 100%;
   position: -webkit-sticky;
   position: sticky;
+  background: #fff;
   text-transform: uppercase;
   top: 0px;
   padding: 10px 0px;
   -webkit-box-shadow: 0px 2px 10px 3px #eeeeee73;
           box-shadow: 0px 2px 10px 3px #eeeeee73;
+  z-index: 100;
 }
 
 header nav {
@@ -27,7 +29,7 @@ header nav {
 }
 
 header nav .logo {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 900;
   width: 40%;
 }
@@ -238,5 +240,272 @@ a {
 
 ion-icon {
   font-size: 20px;
+}
+
+#header {
+  width: 100%;
+  z-index: 5;
+}
+
+#header .header-container {
+  max-width: 1200px;
+  padding-bottom: 50px;
+  margin: auto;
+}
+
+#header .header-container .header-cover {
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 30px;
+}
+
+#header .header-container .header-cover .header-text {
+  margin: auto;
+  padding: 15px;
+}
+
+#header .header-container .header-cover .header-text h1 {
+  font-weight: 900;
+}
+
+#header .header-container .header-cover .header-text .search-wrapper {
+  border: 2px solid var(--prim-color);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+#header .header-container .header-cover .header-text .search-wrapper #search {
+  border: none;
+  outline: none;
+  padding-left: 5px;
+}
+
+#header .header-container .header-cover .header-text .search-wrapper .search-button {
+  background-color: var(--prim-color);
+  border-left: 3px solid var(--prim-color);
+  color: #fff;
+  font-weight: 900;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#header .header-container .header-cover .header-text .search-wrapper .search-button:hover {
+  background-color: #fff;
+  color: var(--prim-color);
+}
+
+#header .header-container .header-cover .header-img {
+  width: 60%;
+  height: 60vh;
+  background-image: url("../img/yellow.jpg");
+  background-size: cover;
+}
+
+#header .header-container .header-statistics {
+  max-width: 1200px;
+  padding: 0px 50px;
+  display: -ms-grid;
+  display: grid;
+  justify-items: left;
+  -ms-grid-columns: (minmax(150px, 350px))[4];
+      grid-template-columns: repeat(4, minmax(150px, 350px));
+  padding: 0px 50px;
+}
+
+#header .header-container .header-statistics .stat-card {
+  text-align: left;
+  padding: 10px;
+  border-left: 1px solid var(--main-color);
+}
+
+#header .header-container .header-statistics .stat-card p {
+  color: var(--main-color);
+}
+
+@media (max-width: 767px) {
+  #header .header-container .header-cover .header-text {
+    margin: auto;
+    padding: 15px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    position: absolute;
+  }
+  #header .header-container .header-cover .header-img {
+    width: 100%;
+    height: 90vh;
+    background-image: url("../img/yellow.jpg");
+    background-size: cover;
+  }
+  #header .header-container .header-statistics {
+    -ms-grid-columns: (minmax(150px, 350px))[2];
+        grid-template-columns: repeat(2, minmax(150px, 350px));
+  }
+}
+
+@media (max-width: 470px) {
+  #header .header-container .header-statistics {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #header .header-container .header-statistics .stat-card {
+    text-align: center;
+    border-bottom: 1px solid #eee;
+  }
+}
+
+#courses {
+  width: 100%;
+  background: #eee;
+}
+
+#courses .courses-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px 0px;
+}
+
+#courses .courses-container .courses-title {
+  padding: 15px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#courses .courses-container .courses-title .courses-scroller {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#courses .courses-container .courses-title .courses-scroller #left,
+#courses .courses-container .courses-title .courses-scroller #right {
+  cursor: pointer;
+  color: #888;
+  font-weight: 700;
+  font-size: 1.2rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#courses .courses-container .courses-title .courses-scroller #left:hover,
+#courses .courses-container .courses-title .courses-scroller #right:hover {
+  color: var(--prim-color);
+}
+
+#courses .courses-container .courses-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 50px;
+}
+
+#courses .courses-container .courses-cards #card1 {
+  background: -webkit-gradient(linear, left top, right top, from(#b6a5099c), to(#311a539f)), url("../img/uiux.jpg");
+  background: linear-gradient(90deg, #b6a5099c, #311a539f), url("../img/uiux.jpg");
+  background-size: 100%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#courses .courses-container .courses-cards #card2 {
+  background: -webkit-gradient(linear, left top, right top, from(#b6a5096b), to(#311a5365)), url("../img/code.jpg");
+  background: linear-gradient(90deg, #b6a5096b, #311a5365), url("../img/code.jpg");
+  background-size: 100%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#courses .courses-container .courses-cards #card3 {
+  background: -webkit-gradient(linear, left top, right top, from(#b6a5096b), to(#311a5365)), url("../img/business.jpg");
+  background: linear-gradient(90deg, #b6a5096b, #311a5365), url("../img/business.jpg");
+  background-size: 100%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#courses .courses-container .courses-cards #card1:hover,
+#courses .courses-container .courses-cards #card2:hover,
+#courses .courses-container .courses-cards #card3:hover {
+  background-size: 120%;
+}
+
+#courses .courses-container .courses-cards .course-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 400px;
+  margin-left: 10px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+#courses .courses-container .courses-cards .course-card .card-title {
+  height: 180px;
+  text-justify: end;
+  color: #fff;
+  font-weight: 700;
+  text-transform: capitalize;
+  padding: 10px;
+}
+
+#courses .courses-container .courses-cards .course-card .card-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+#courses .courses-container .courses-cards .course-card .card-button button {
+  width: 50%;
+}
+
+#courses .courses-container .courses-cards .course-card .card-button .attend {
+  color: #fff;
+  font-weight: 700;
+  background: var(--prim-color);
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,91 @@
+#courses {
+    width: 100%;
+    background: #eee;
+    .courses-container{ 
+        max-width: 1200px;
+        margin: auto;
+        padding: 50px 0px;
+        .courses-title{
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            .courses-scroller {
+                display: flex;
+                width: 100px;
+                justify-content: space-between;
+                align-items: center;
+                #left,
+                #right {
+                    cursor: pointer;
+                    color: #888;
+                    font-weight: 700;
+                    font-size: 1.2rem;
+                    transition: all 0.3s ease;
+                }
+                #left:hover,
+                #right:hover {
+                    color: var(--prim-color);
+
+                }
+            }
+        }
+        .courses-cards {
+            display: flex;
+            padding: 15px 50px ;
+            #card1 {
+                background: linear-gradient(90deg, #b6a5099c, #311a539f),  url('../img/uiux.jpg');
+                background-size: 100% ;
+                transition: all 0.5s ease;
+
+            }
+            #card2 {
+                background: linear-gradient(90deg, #b6a5096b, #311a5365),  url('../img/code.jpg');
+                background-size: 100% ;
+                transition: all 0.5s ease;
+            }
+            #card3 {
+                background: linear-gradient(90deg, #b6a5096b, #311a5365),  url('../img/business.jpg');
+                background-size: 100% ;
+                transition: all 0.5s ease;
+            }
+            #card1:hover,
+            #card2:hover,
+            #card3:hover {
+                background-size: 120%;
+            }
+            .course-card{
+                display: flex;
+                flex-direction: column;
+                width: 400px;
+                margin-left: 10px;
+                transition: all 0.3s ease-in;
+                .card-title{
+                    height: 180px;
+                    text-justify: end;
+                    color: #fff;
+                    font-weight: 700;
+                    text-transform: capitalize;
+                    padding: 10px;
+                }
+            
+                .card-discription {
+
+                }
+                .card-button{
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: nowrap;
+                    button{
+                        width: 50%;
+                    }
+                    .attend{
+                        color: #fff;
+                        font-weight: 700;
+                        background: var(--prim-color);
+                    }
+                }
+            }
+        }
+    }
+}
+
