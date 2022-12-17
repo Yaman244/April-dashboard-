@@ -1,0 +1,32 @@
+footer{
+    background: #1c0e30;
+    color: #fff;
+    width: 100%;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+    p{
+    }
+    .lebel{
+        li{
+            list-style: none;
+        }
+        a{
+            color: #fff;
+            transition: all 0.3s ease;
+        }
+        a:hover{
+            color: var(--main-color);
+        }
+    }
+}
+
+#made-with{
+    background: var(--prim-color);
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

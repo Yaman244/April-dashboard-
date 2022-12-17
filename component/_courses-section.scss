@@ -32,6 +32,7 @@
         .courses-cards {
             display: flex;
             padding: 15px 50px ;
+            
             #card1 {
                 background: linear-gradient(90deg, #b6a5099c, #311a539f),  url('../img/uiux.jpg');
                 background-size: 100% ;
@@ -39,12 +40,17 @@
 
             }
             #card2 {
-                background: linear-gradient(90deg, #b6a5096b, #311a5365),  url('../img/code.jpg');
+                background: linear-gradient(90deg, #b6a5099c, #311a539f),  url('../img/code.jpg');
                 background-size: 100% ;
                 transition: all 0.5s ease;
             }
             #card3 {
-                background: linear-gradient(90deg, #b6a5096b, #311a5365),  url('../img/business.jpg');
+                background: linear-gradient(90deg, #b6a5099c, #311a539f),  url('../img/business.jpg');
+                background-size: 100% ;
+                transition: all 0.5s ease;
+            }
+            #card4 {
+                background: linear-gradient(90deg, #b6a5099c, #311a539f),  url('../img/yellow.jpg');
                 background-size: 100% ;
                 transition: all 0.5s ease;
             }
@@ -58,7 +64,7 @@
                 flex-direction: column;
                 width: 400px;
                 margin-left: 10px;
-                transition: all 0.3s ease-in;
+                opacity: 100%;
                 .card-title{
                     height: 180px;
                     text-justify: end;
@@ -66,10 +72,16 @@
                     font-weight: 700;
                     text-transform: capitalize;
                     padding: 10px;
-                }
-            
-                .card-discription {
+                    cursor:pointer;
 
+                }
+                .card-discription {
+                    margin: 10px 0px;
+                    padding: 0px 10px;
+                    display: grid;
+                    grid-template-columns: repeat(2, minmax(50px, 100%));
+                    font-size: 0.9rem;
+                    cursor:default;
                 }
                 .card-button{
                     display: flex;
@@ -78,14 +90,21 @@
                     button{
                         width: 50%;
                     }
+                    button:hover{
+                        color: #fff;
+                        background: var(--prim-color);
+                    }
                     .attend{
                         color: #fff;
                         font-weight: 700;
                         background: var(--prim-color);
+                    }
+                    .attend:hover{
+                        background-color: #fff;
+                        color: var(--prim-color);
                     }
                 }
             }
         }
     }
 }
-

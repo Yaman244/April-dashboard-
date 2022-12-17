@@ -1,0 +1,16 @@
+#top-category{
+    width: 100%;
+    .category-container{
+        max-width:1200px;
+        margin: auto;
+        padding: 50px 0px;
+
+        .category-title{
+            padding: 15px 50px;
+        }
+    }
+    #chart {
+        width: 90%;
+        margin: auto;
+    }
+}
