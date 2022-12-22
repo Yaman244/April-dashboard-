@@ -2,16 +2,20 @@ footer{
     background: #1c0e30;
     color: #fff;
     width: 100%;
-    padding: 0px 100px;
+    padding: 0px 50px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    height: 150px;
+    height: 100px;
     p{
     }
     .lebel{
+        ul{
+            display: flex;
+        }
         li{
             list-style: none;
+            padding: 0px 10px;
         }
         a{
             color: #fff;
@@ -29,4 +33,16 @@ footer{
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+@media (max-width: 767px) {
+    footer {
+        padding: 10px 40px;
+        height: auto;
+        .lebel{
+            ul{
+                display: block;
+            }
+        }
+    }
 }
